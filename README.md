@@ -1,7 +1,19 @@
 # web-pull-to-refresh
 
-### QRCode
-Scan the QRCode below to preview the example, where source code is provide in `gh-pages` branch.
+## Table of content 
+- [QRCode](https://github.com/movii/web-pull-to-refresh#qrcode)
+- [Preview](https://github.com/movii/web-pull-to-refresh#preview)
+- [Usage](https://github.com/movii/web-pull-to-refresh#usage)
+  - [HTML and CSS](https://github.com/movii/web-pull-to-refresh#html-and-css)
+  - [Using `window`](https://github.com/movii/web-pull-to-refresh#use-window)
+  - [Using AMD with require.js](https://github.com/movii/web-pull-to-refresh#amd-with-requirejs)
+  - [Change `statusText` within `refresher` function](https://github.com/movii/web-pull-to-refresh#change-statustext-within-refresher-function)
+  - [Manually trigger with `.trigger()`](https://github.com/movii/web-pull-to-refresh#manually-trigger-with-trigger)
+- [Options](https://github.com/movii/web-pull-to-refresh#options)
+- [License](https://github.com/movii/web-pull-to-refresh#license)
+
+## QRCode
+Scan the QRCode below to preview the example *(which source code is provide in `gh-pages` branch)*.
 <div align="center">
   <img src="/media/web_pull_to_refresh_qrcod.png"/>
 </div> 
