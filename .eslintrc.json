@@ -1,0 +1,24 @@
+{
+  "env": {
+    "es6": true,
+    "amd": true,
+    "browser": true,
+    "commonjs": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "plugins": [
+    "import"
+  ],
+  "rules": {
+    "semi": [2, "never"],
+    "indent": [ "error", 2],
+    "camelcase": 0,
+    "import/no-amd": 0,
+    "space-before-function-paren": 0
+  }
+}
