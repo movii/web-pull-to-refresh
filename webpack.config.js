@@ -1,10 +1,14 @@
-var path = require('path')
-var webpack = require('webpack')
-var ExtractTextPlugin = require("extract-text-webpack-plugin")
-var CleanWebpackPlugin = require('clean-webpack-plugin')
+const path = require('path')
+const webpack = require('webpack')
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+
+const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
-  devtool: '#cheap-module-source-map',
+  devtool: isProd
+    ? false
+    : '#cheap-module-source-map',
   target: 'web',
   entry: path.resolve(__dirname, './src/PullRefresh.js'),
   output: {
@@ -58,7 +62,7 @@ module.exports = {
   }
 }
 
-if (process.env.NODE_ENV === 'production') {
+if (isProd) {
   module.exports.plugins.push(
     new webpack.optimize.UglifyJsPlugin({
       sourcemap: true,
