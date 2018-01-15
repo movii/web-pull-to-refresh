@@ -12,7 +12,7 @@
 - [License](https://github.com/movii/web-pull-to-refresh#license)
 
 ## QRCode
-Scan the QRCode below to preview the example *(which source code is provide in `gh-pages` branch)*.
+Scan the QRCode below to preview the example *(which source code is provided in `gh-pages` branch)*.
 <div align="center">
   <img src="/media/web_pull_to_refresh_qrcod.png"/>
 </div> 
