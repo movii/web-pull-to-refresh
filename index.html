@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Web Pull Down Refresh</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: 
+				Helvetica, 
+				Arial, 
+				sans-serif;
+			background: #333333;
+			position: relative; 
+			padding-top: 50px;
+			box-sizing: border-box;
+		}
+
+		.app {
+			width: 100%;
+			height: 100%; 
+		}
+
+		header {
+			font-size: 24px;
+			font-weight: 200;
+			color: #555;
+			box-sizing: border-box;
+			width: 100%;
+			height: 50px;
+			border-bottom: 1px solid #444444;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 20;
+			background: #ffffff;
+			overflow: hidden; 
+		}
+
+		header h1 {
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			font-size: 20px;
+			font-weight: normal; 
+		}
+
+		.content {
+			position: relative;
+			z-index: 20;
+		}
+
+		.content > ul > li {
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			font-size: 13px;
+			width: 100%;
+			background: #f1f2f3;
+			color: #676869;
+			border-bottom: 1px solid #c1c2c3;
+		}
+
+		.btn__refresh {
+			position: fixed;
+			bottom: 40px;
+			right: 40px;
+			z-index: 100;
+			background: rgba(0, 0, 0, .35);
+			color: white;
+			width: 70px;
+			height: 70px;
+			display: flex;
+			border-radius: 6px;
+		}
+
+		.btn__refresh > span {
+			margin: auto;
+		}
+	</style>
+	<link rel="stylesheet" href="dist/ptr.css">
+	<script data-main="main" src="lib/require.js"></script>
+</head>
+<body>
+	<div class="btn__refresh">
+		<span>refresh</span>
+	</div>
+	<div class="app">
+		<header>
+			<h1>Web Pull Refresh Demo</h1>
+		</header>
+		<div class="wrapper ptr-wrapper">
+			<div class="ptr">
+				<div class="loading">
+					<span class="status-arrow"></span>
+					<span class="status-loader"></span>
+					<span class="status-text">pull more</span>
+				</div>
+			</div>
+			<div class="content">
+				<ul></ul>
+			</div>
+		</div>
+	</div>
+	<!-- <script src="./dist/ptr.js"></script>
+	<script>
+		let $content = document.querySelector('.content ul')
+
+		$content.innerHTML = [...Array(55)].map((_, i) => {
+			return `<li class="list">list: {{i}}</li>`.replace(/{{i}}/, ++i)
+		}).join('')
+
+		const ptr = new PTR({
+			distance_to_refresh: 40
+		})
+	</script> -->
+</body>
+</html>
