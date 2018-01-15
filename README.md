@@ -1,6 +1,5 @@
 # web-pull-to-refresh
 
-## Table of content 
 - [QRCode](https://github.com/movii/web-pull-to-refresh#qrcode)
 - [Preview](https://github.com/movii/web-pull-to-refresh#preview)
 - [Usage](https://github.com/movii/web-pull-to-refresh#usage)
@@ -17,7 +16,6 @@ Scan the QRCode below to preview the example *(which source code is provide in `
 <div align="center">
   <img src="/media/web_pull_to_refresh_qrcod.png"/>
 </div> 
-
 
 1. Pull down then let go to see basic pull-to-refresh effect;
 2. Tap the button in bottom right corner to manually trigger a pull-down action;
