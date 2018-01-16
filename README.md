@@ -213,7 +213,7 @@ $('.button-to-trigger').on('click'. () => {
 | `distanceToRefresh` 	| `Number` 	|  Threshold value. <br>Control how long the distance finger can pull down to trigger release-to-refresh. <br><br> **recommend 50 ~ 90, and a number provided bigger than 120, it willl stay at 120.** 	|
 | `pullDownText` 	| `String` 	| The text show in pull-down state.<br>In the example it refers to 'Keep Dragging' 	|
 | `releaseText` 	| `String` 	| The text show in release-to-update state.<br> In the example it refers to 'Now can release' 	|
-| `refreshText` 	| `String` 	| The text show in the refresh action is actually taking place.<br><br> In the example it refers to 'Updating' 	|
+| `refreshText` 	| `String` 	| The text show in the refresh action is actually taking place.<br>In the example it refers to 'Updating' 	|
 | `finishText` 	| `String` 	| The text show in the refresh action is done.<br> In the example it refers to 'Done'.<br><br> There is a `trigger()` you can use to manually trigger a pull-down-refresh, and the trigger function actually have a paramter call `statusText`, for detail see the Usage part below. basically it let you change the text shown. 	|
 | `refresher` 	| `function` 	| The function will be fired. **Promise Excepted**, see example blow. 	|
 
