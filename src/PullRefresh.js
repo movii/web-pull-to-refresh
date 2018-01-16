@@ -238,7 +238,12 @@ class PTR {
 }
 
 function refresher() {
-  alert('refresh handler fires')
+  return new Promise(resolve => {
+    setTimeout(() => {
+      alert('refresh handler fires')
+      resolve()
+    }, 200)
+  })
 }
 
 // pull to refresh default options
