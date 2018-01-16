@@ -1,5 +1,24 @@
 # web-pull-to-refresh
 
+- [Intro](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#intro)
+  - [Scan the QRCode to preview](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#scan-the-qrcode-to-preview)
+  - [Screenshots](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#screenshots)
+- [Download](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#downloads)
+  - [Via Github](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#via-github)
+  - [Via NPM](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#via-npm)
+- [Installation](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#installation)
+  - [Using window](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#using-window)
+  - [Using AMD with require.js](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#using-amd-with-requirejs)
+  - [Import with Webpack](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#import-with-webpack)
+- [Usage](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#usage)
+  - [Basic Usage](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#basic-usage)
+  - [Change statusText within refresher callback](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#change-statustext-within-refresher-callback)
+  - [Manually trigger with .trigger()](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#manually-trigger-with-trigger)
+- [Options](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#options)
+  - [Options' default value](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#options-default-value)
+- [Develop](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#develop)
+- [License](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#license)
+
 ## Intro
 ### Scan the QRCode to preview
 Scan the QRCode below to preview the example (which source code is provided in gh-pages branch).
@@ -21,23 +40,22 @@ Gif recorded on my Mac
   <img src="/media/web_pull_to_refresh_preview.gif" width="70%" />
 </div> 
 
-## Installation
-### Download
-#### Via Github
+## Download
+### Via Github
 Clone or open the [`./dist`](https://github.com/movii/web-pull-to-refresh/tree/master/dist), grab `ptr.js` and `ptr.css`, place them wherever you want.
 
 ```html
 <link rel="stylesheet" href="path/to/ptr.css">
-<script>
+<script src="/path/to/ptr.js"></script>
 ```
 
-#### Via NPM
+### Via NPM
 
 ```shell
 npm install web-pull-to-refresh --save
 ```
- 
-### Installation
+
+## Installation 
 CSS file should always be required
 
 ```html
