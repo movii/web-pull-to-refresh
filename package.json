@@ -1,10 +1,22 @@
 {
   "name": "web-pull-to-refresh",
   "version": "1.0.0",
+  "main": "./dist/ptr.js",
   "scripts": {
     "serve": "export NODE_ENV=development && webpack-dev-server",
     "build:dev": "webpack --hide-modules --watch",
     "build:prod": "export NODE_ENV=production && webpack"
+  },
+  "keywords": [
+    "pull-down-refresh",
+    "pull-to-refresh"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/movii/web-pull-to-refresh"
+  },
+  "bugs": {
+    "url": "https://github.com/movii/web-pull-to-refresh/issues"
   },
   "license": "MIT",
   "devDependencies": {
@@ -23,9 +35,9 @@
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.10.0"
   },
-  "keywords": [
-    "pull refresh"
-  ],
-  "author": "Lien",
-  "dependencies": {}
+  "author": {
+    "name": "Lien",
+    "email": "mmo.strangeline@gmail.com",
+    "url": "http://movii.github.io/blog/"
+  }
 }
