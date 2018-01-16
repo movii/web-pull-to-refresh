@@ -2,16 +2,9 @@ require(['./dist/ptr'], (PTR) => {
   
   const $ = selector => document.querySelector(selector)
 
-  let $content = $('.content ul')
-  let $trigger = $('.btn__refresh')
+  const $trigger = $('.btn__refresh')
 
-  let $html = [...Array(55)].map((_, i) => {
-    return `<li class="list">list: {{i}}</li>`.replace(/{{i}}/, ++i)
-  }).join('')
-
-  $content.innerHTML =$html
-
-  const refresher = (statusText) => {
+  const refresher = () => {
     return new Promise((resolve) => {
       setTimeout(() => {
         alert('new refresher')
