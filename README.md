@@ -1,4 +1,5 @@
 # web-pull-to-refresh
+[![NPM](https://nodei.co/npm/web-pull-to-refresh.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/web-pull-to-refresh/)
 
 - [Intro](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#intro)
   - [Scan the QRCode to preview](https://github.com/movii/web-pull-to-refresh/blob/master/README.md#scan-the-qrcode-to-preview)
