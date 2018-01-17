@@ -1,6 +1,6 @@
 {
   "name": "web-pull-to-refresh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/ptr.js",
   "scripts": {
     "serve": "export NODE_ENV=development && webpack-dev-server",
