@@ -39,5 +39,8 @@
     "name": "Lien",
     "email": "mmo.strangeline@gmail.com",
     "url": "http://movii.github.io/blog/"
+  },
+  "dependencies": {
+    "hoek": "5.0.3"
   }
 }
